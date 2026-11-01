@@ -1,128 +1,131 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sk.css">
-    <title>Myntra clone</title>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
-</head>
-
-<body>
-    <header>
-        <div class="logo_container">
-            <a href="#"><img class="myntra_home" src="myntra_logo.webp" alt="Myntra home"></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A fashion storefront interface concept." />
+    <title>Myntra Storefront UI</title>
+    <link rel="stylesheet" href="sk.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo_container" href="#" aria-label="Myntra home">
+        <img class="myntra_home" src="myntra_logo.webp" alt="" />
+      </a>
+      <nav class="nav_bar" aria-label="Main navigation">
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Kids</a>
+        <a href="#">Home &amp; Living</a>
+        <a href="#">Beauty</a>
+        <a href="#">Studio <sup>New</sup></a>
+      </nav>
+      <label class="search_bar">
+        <span class="material-symbols-outlined search_icon" aria-hidden="true">search</span>
+        <input
+          class="search_input"
+          type="search"
+          aria-label="Search products and brands"
+          placeholder="Search for products, brands and more"
+        />
+      </label>
+      <div class="action_bar" aria-label="Account actions">
+        <div class="action_container">
+          <span class="material-symbols-outlined action_icon" aria-hidden="true">person</span>
+          <span class="action_name">Profile</span>
         </div>
-        <nav class="nav_bar">
-            <a href="#">Men</a>
-            <a href="#">women</a>
-            <a href="#">Kids</a>
-            <a href="#">Home & Living</a>
-            <a href="#">Beauty</a>
-            <a href="#">Studio <sup>new</sup></a>
-
-        </nav>
-        <div class="search_bar">
-            <span class="material-symbols-outlined search_icon">search </span>
-            <input class="search_input" placeholder="search for product, brands and more">
+        <div class="action_container">
+          <span class="material-symbols-outlined action_icon" aria-hidden="true">favorite</span>
+          <span class="action_name">Wishlist</span>
         </div>
-        <div class="action_bar">
-
-            <div class="action_container">
-                <span class="material-symbols-outlined action_icon">person</span>
-                <span class="action_name">profile</span>
-            </div>
-            <div class="action_container">
-                <span class="material-symbols-outlined action_icon">favorite</span>
-                <span class="action_name">wishlist</span>
-            </div>
-            <div class="action_container">
-                <span class="material-symbols-outlined action_icon">shopping_bag</span>
-                <span class="action_name">Bag</span>
-            </div>
+        <div class="action_container">
+          <span class="material-symbols-outlined action_icon" aria-hidden="true">shopping_bag</span>
+          <span class="action_name">Bag</span>
         </div>
+      </div>
     </header>
-</body>
-<main>
-    <div class="banner_container">
-        <img class="banner_image" src="banner.jpg" alt="Main banner">
-    </div>
-    <div class="category_heading">MEDAL WORTHY BRANDS TO BAG</div>
-    <div class="category_item">
-        <a href="#"><img class="sale_item" src="offers/1.png"></a>
-        <a href="#"><img class="sale_item" src="offers/2.png"></a>
-        <a href="#"><img class="sale_item" src="offers/3.png"></a>
-        <a href="#"><img class="sale_item" src="offers/4.png"></a>
-        <a href="#"><img class="sale_item" src="offers/5.png"></a>
-        <a href="#"><img class="sale_item" src="offers/6.png"></a>
-        <a href="#"><img class="sale_item" src="offers/7.png"></a>
-        <a href="#"><img class="sale_item" src="offers/8.png"></a>
-        <a href="#"><img class="sale_item" src="offers/9.png"></a>
-        <a href="#"><img class="sale_item" src="offers/10.png"></a>
-        <a href="#"><img class="sale_item" src="offers/11.png"></a>
-        <a href="#"><img class="sale_item" src="offers/12.png"></a>
-    </div>
-    <div class="category_heading">SHOP BY CATEGORY</div>
-    <div class="category_item">
-        <a href="#"><img class="sale_item" src="1.jpg"></a>
-        <a href="#"><img class="sale_item" src="2.jpg"></a>
-        <a href="#"><img class="sale_item" src="3.jpg"></a>
-        <a href="#"><img class="sale_item" src="4.jpg"></a>
-        <a href="#"><img class="sale_item" src="5.jpg"></a>
-        <a href="#"><img class="sale_item" src="6.jpg"></a>
-        <a href="#"><img class="sale_item" src="7.jpg"></a>
-        <a href="#"><img class="sale_item" src="8.jpg"></a>
-        <a href="#"><img class="sale_item" src="9.jpg"></a>
-        <a href="#"><img class="sale_item" src="10.jpg"></a>
-    </div>
 
-    </div>
-</main>
-<footer>
-    <div class="footer_container">
-        <div class="footer_column">
-            <h3>ONLINE SHOPPING</h3>
-            <a href="#">Men</a>
-            <a href="#">women</a>
-            <a href="#">Kids</a>
-            <a href="#">Home & Living</a>
-            <a href="#">Beauty</a>
-            <a href="#">gift card</a>
-            <a href="#">myntra insider</a>
-
+    <main id="main-content">
+      <h1 class="visually-hidden">Fashion storefront</h1>
+      <div class="banner_container">
+        <img class="banner_image" src="banner.jpg" alt="Featured fashion collection" />
+      </div>
+      <section aria-labelledby="offers-heading">
+        <h2 class="category_heading" id="offers-heading">Featured offers</h2>
+        <div class="category_item">
+          <img class="sale_item" src="offers/1.png" alt="Fashion offer 1" />
+          <img class="sale_item" src="offers/2.png" alt="Fashion offer 2" />
+          <img class="sale_item" src="offers/3.png" alt="Fashion offer 3" />
+          <img class="sale_item" src="offers/4.png" alt="Fashion offer 4" />
+          <img class="sale_item" src="offers/5.png" alt="Fashion offer 5" />
+          <img class="sale_item" src="offers/6.png" alt="Fashion offer 6" />
+          <img class="sale_item" src="offers/7.png" alt="Fashion offer 7" />
+          <img class="sale_item" src="offers/8.png" alt="Fashion offer 8" />
+          <img class="sale_item" src="offers/9.png" alt="Fashion offer 9" />
+          <img class="sale_item" src="offers/10.png" alt="Fashion offer 10" />
+          <img class="sale_item" src="offers/11.png" alt="Fashion offer 11" />
+          <img class="sale_item" src="offers/12.png" alt="Fashion offer 12" />
         </div>
-        <div class="footer_container" id="footer_cont">
-            <div class="footer_column">
-                <h3>CUSTOMER POLICIES</h3>
-                <a href="#">Contact Us</a>
-                <a href="#">FAQ</a>
-                <a href="#">T&C</a>
-                <a href="#">Terms of Use</a>
-                <a href="#">Track Order</a>
-                <a href="#">Shipping</a>
-                <a href="#">Cancellation</a>
-                <a href="#">Returns</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Grievance Officer</a>
+      </section>
+      <section aria-labelledby="categories-heading">
+        <h2 class="category_heading" id="categories-heading">Shop by category</h2>
+        <div class="category_item">
+          <img class="sale_item" src="1.jpg" alt="Fashion category 1" />
+          <img class="sale_item" src="2.jpg" alt="Fashion category 2" />
+          <img class="sale_item" src="3.jpg" alt="Fashion category 3" />
+          <img class="sale_item" src="4.jpg" alt="Fashion category 4" />
+          <img class="sale_item" src="5.jpg" alt="Fashion category 5" />
+          <img class="sale_item" src="6.jpg" alt="Fashion category 6" />
+          <img class="sale_item" src="7.jpg" alt="Fashion category 7" />
+          <img class="sale_item" src="8.jpg" alt="Fashion category 8" />
+          <img class="sale_item" src="9.jpg" alt="Fashion category 9" />
+          <img class="sale_item" src="10.jpg" alt="Fashion category 10" />
+        </div>
+      </section>
+    </main>
 
-
-            </div>
-            <div class="footer_container" id="down_mobile">
-                <div class="footer_row">
-                    <div class="experiance">
-                        <h3>EXPERIANCE MYNTRA APP ON MOBILE</h3>
-                    </div>
-                    <div class="download">
-                        <img class="desktop-androidDownLink" src="https://constant.myntassets.com/web/assets/img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png">
-                        <img class="desktop-iOSDownLink" src="https://constant.myntassets.com/web/assets/img/bc5e11ad-0250-420a-ac71-115a57ca35d51539674178941-apple_store.png">
-                    </div>
-                    
-                </div>
-
-            </div>
-</footer>
-
+    <footer class="footer_container">
+      <section class="footer_column" aria-labelledby="shopping-heading">
+        <h2 id="shopping-heading">Online shopping</h2>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Kids</a>
+        <a href="#">Home &amp; Living</a>
+        <a href="#">Beauty</a>
+        <a href="#">Gift cards</a>
+        <a href="#">Myntra Insider</a>
+      </section>
+      <section class="footer_column" aria-labelledby="policies-heading">
+        <h2 id="policies-heading">Customer policies</h2>
+        <a href="#">Contact us</a>
+        <a href="#">FAQs</a>
+        <a href="#">Terms of use</a>
+        <a href="#">Track order</a>
+        <a href="#">Shipping</a>
+        <a href="#">Returns</a>
+        <a href="#">Privacy policy</a>
+      </section>
+      <section class="app-download" aria-labelledby="app-heading">
+        <h2 id="app-heading">Experience the app</h2>
+        <div class="download">
+          <img
+            class="store-badge"
+            src="https://constant.myntassets.com/web/assets/img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png"
+            alt="Get it on Google Play"
+          />
+          <img
+            class="store-badge"
+            src="https://constant.myntassets.com/web/assets/img/bc5e11ad-0250-420a-ac71-115a57ca35d51539674178941-apple_store.png"
+            alt="Download on the App Store"
+          />
+        </div>
+      </section>
+    </footer>
+  </body>
 </html>
